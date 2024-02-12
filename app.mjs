@@ -14,6 +14,10 @@ app.get('/q1', (req, res) => {
     res.sendStatus(200);
 });
 
+app.post('/q2', express.json(), (req, res) => {
+    res.send(req.body.length.toString());
+});
+
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
