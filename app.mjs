@@ -55,6 +55,19 @@ app.post('/q3', express.json(), (req, res) => {
     res.send(req.body);
 });
 
+/**
+ * Returns the content of the external API. 
+ */
+app.get('/q4', async (req, res) => {
+    const external_api_url = 'https://pastebin.pl/view/raw/8fced5f8';
+    try {
+        const response = await axios.get(external_api_url);
+        res.json(response.data);
+    } catch (error) {
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+});
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 })
