@@ -2,7 +2,7 @@
 
 ## Technologies used
 
-- NodeJS
+- NodeJS (21.6.1)
 
 - Express
 
