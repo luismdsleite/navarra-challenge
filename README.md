@@ -12,10 +12,10 @@
 
 - `http://localhost:3000/q1`
 
-- `http://localhost:3000/q2`
+- `http://localhost:3000/q4`
 
 ## POST requests
 
-- `http://localhost:3000/q3`
+- `http://localhost:3000/q2`
 
-- `http://localhost:3000/q4`
+- `http://localhost:3000/q3`
